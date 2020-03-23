@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zav1.css">
+    <title>Zav1</title>
+</head>
+
+<body>
+    <section class="sec1">
+        <main>
+            <label for="disk_c">Disk usage C:</label>
+            <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+            <label for="disk_d">Disk usage D:</label>
+            <meter id="disk_d" value="0.6">60%</meter>
+            <embed src="helloworld.swf">
+            <table>
+                <tr>
+                    <th>January
+                        <dialog open>This is an open dialog window</dialog>
+                    </th>
+                    <th>February</th>
+                    <th>March</th>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>28</td>
+                    <td>31</td>
+                </tr>
+            </table>
+            <article>
+                <header>
+                    <h1>Most important heading here</h1>
+                    <h2>Less important heading here</h2>
+                    <p>Some additional information here</p>
+                </header>
+                <p>Lorem Ipsum dolor set amet....</p>
+            </article>
+            <figure>
+                <img src="f1.jpg" alt="Trulli" style="width:50%">
+                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+            </figure>
+            <audio controls>
+                <source src="music1.mp3" type="audio/mp3">
+                    <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+                Your browser does not support the audio tag.
+              </audio>
+            <ul>
+                <li>User <bdi>hrefs</bdi>: 60 points</li>
+                <li>User <bdi>jdoe</bdi>: 80 points</li>
+                <li>User <bdi>إيان</bdi>: 90 points</li>
+            </ul>
+            <p>Do not forget to buy <mark>milk</mark> today.</p>
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/css/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/jquery/">jQuery</a>
+            </nav>
+        </main>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+            <input type="range" id="a" value="50">100 +
+            <input type="number" id="b" value="50"> =
+            <output name="x" for="a b"></output>
+        </form>
+        <label for="file">Downloading progress:</label>
+        <progress id="file" value="32" max="100"> 32% </progress>
+    </section>
+    <footer>
+        <p>Posted by: Hege Refsnes</p>
+        <p>Contact information: <a href="mailto:someone@example.com">
+        someone@example.com</a>.</p>
+    </footer>
+    <section class="sec2">
+        <aside>
+            <p>Экономьте электричество</p>
+            <p>Хороший язык</p>
+            <p>Чья палка больше</p>
+        </aside>
+        <article>
+            История о том, как возле столовой появились загадочные розовые следы с шестью пальцами, и почему это случилось.
+        </article>
+        <input list="browsers">
+
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <details>
+            <summary>Copyright 1999-2018.</summary>
+            <p> - by Refsnes Data. All Rights Reserved.</p>
+            <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+        </details>
+    </section>
+    <section class="sec3">
+        <canvas id="myCanvas"></canvas>
+        <template>
+        <h2>Flower</h2>
+        <img src="img_white_flower.jpg">
+    </template>
+
+        <p>We open at <time>10:00</time> every morning.</p>
+
+        <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+    </section>
+    <section class="sec4">
+        <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+        <p>
+            To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.
+        </p>
+        <picture>
+            <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+            <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+            <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+
+        <menu type="context" id="mymenu">
+            <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png">
+            </menuitem>
+            <menu label="Share on...">
+                <menuitem label="Twitter" icon="ico_twitter.png" onclick="window.open('//twitter.com/intent/tweet?text='+window.location.href);">
+                </menuitem>
+                <menuitem label="Facebook" icon="ico_facebook.png" onclick="window.open('//facebook.com/sharer/sharer.php?u='+window.location.href);">
+                </menuitem>
+            </menu>
+            <menuitem label="Email This Page" onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+        </menu>
+    </section>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 80);
+    </script>
+</body>
+
+</html>

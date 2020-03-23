@@ -1,0 +1,7 @@
+.input-tag,
+.button-tag,
+.radio,
+.checkbox::before {
+    margin-top: 50px;
+    margin-left: 50px;
+}
